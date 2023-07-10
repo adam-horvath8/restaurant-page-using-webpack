@@ -1,14 +1,12 @@
 // Imports
 import { contentDiv } from "./index.js";
 import { body } from "./index.js";
-import "./home-style.css";
+import "./contact-style.css";
 import logoImg from "./images/logo-adare-restaurant.png";
 import backgroundImg from "./images/background-adare-restaurant.jpg";
-import dezertImg from "./images/dsc_3013.jpg";
-import pastaImg from "./images/pasta.jpg";
-import steakImg from "./images/steak.jpg";
+
 // Code
-export function createHome() {
+export function createContact() {
   contentDiv.classList.add("content-div");
   body.style.backgroundImage = `url(${backgroundImg})`;
 
@@ -41,37 +39,13 @@ export function createHome() {
   heroDiv.classList.add("hero-div");
 
   const heading = document.createElement("h1");
-  heading.innerText = "let's meat";
+  heading.innerText = "Do you have any Questions?";
 
   const par = document.createElement("p");
   par.innerText =
-    "We love sharing good food with great people. We bring over 30 years industry experience and passion to Adare. With a dishes that are carefully designed to bring you a truly satisfying Irish food experience that you are sure to remember.";
+    "You can contact use and make your reservation at the telephone number: +420 123 456 856. You can also write an email at bestrestaurant@gmail.com" ;
 
   contentDiv.appendChild(heroDiv);
   heroDiv.append(heading, par);
 
-  // Meals Div
-  const pastaDiv = document.createElement("div");
-  pastaDiv.style.backgroundImage = `url(${pastaImg})`;
-  pastaDiv.classList.add("cell");
-
-  const steakDiv = document.createElement("div");
-  steakDiv.style.backgroundImage = `url(${steakImg})`;
-  steakDiv.classList.add("cell");
-
-  const dezertDiv = document.createElement("div");
-  dezertDiv.style.backgroundImage = `url(${dezertImg})`;
-  dezertDiv.classList.add("cell");
-
-  const mealsDiv = document.createElement("div");
-  mealsDiv.classList.add("meals-div");
-
-  mealsDiv.append(pastaDiv, steakDiv, dezertDiv);
-  contentDiv.appendChild(mealsDiv);
-
-  return {
-    homeTab,
-    menuTab,
-    contactTab
-  };
 }

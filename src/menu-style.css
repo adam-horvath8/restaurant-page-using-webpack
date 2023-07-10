@@ -9,6 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 120px;
+  background-color: rgb(25, 25, 25);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -52,6 +53,8 @@ li {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 200px;
 }
 
 p {
@@ -68,21 +71,23 @@ h1 {
   position: absolute;
   top: 10px;
 }
-.meals-div {
-  height: 50%;
-  width: 100%;
+
+.menu-div {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 50px;
-  padding: 10px;
 }
 
 .cell {
-  background-position: center;
-  border-radius: 10px;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 400px;
+  display: flex;
+  line-height: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  flex-direction: column;
 }
 
-
+.menu-heading {
+  font-size: 2rem;
+}
