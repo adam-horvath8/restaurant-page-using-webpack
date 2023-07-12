@@ -1,73 +1,25 @@
-* {
-  margin: 0px;
-  box-sizing: border-box;
-  color: white;
-}
 
-body {
+.hero-section {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 120px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.content-div {
-  width: 80%;
-  height: 100vh;
-  display: flex;
+  justify-content: center;
   flex-direction: column;
-}
-
-nav {
-  background-color: rgb(9, 7, 7, 0.6);
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-ul {
-  width: 400px;
-}
-
-.nav-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-li {
-  margin: 15px;
-  list-style: none;
-}
-
-.hero-div {
-  height: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  width: 62%;
   text-align: center;
+  padding: 150px;
+ 
 }
 
-p {
-  width: 700px;
+.home-heading {
+  font-size: 6rem;
+  margin-bottom: 20px;
+  font-family: "Lobster", cursive;
+}
+
+.home-par {
   font-size: 1.3rem;
 }
 
-h1 {
-  font-size: 5rem;
-  margin-bottom: 30px;
-}
-
-.logo-adore {
-  position: absolute;
-  top: 10px;
-}
 .meals-div {
   height: 50%;
   width: 100%;
@@ -83,6 +35,5 @@ h1 {
   border-radius: 10px;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 400px;
 }
-
-

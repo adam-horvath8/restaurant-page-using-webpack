@@ -1,4 +1,5 @@
 const path = require("path");
+
 module.exports = {
   mode: "development", // Enclose the mode value in quotes
   entry: "./src/index.js",
@@ -6,6 +7,7 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
   },
+
   module: {
     rules: [
       {
@@ -28,4 +30,4 @@ module.exports = {
   },
   devtool: "inline-source-map",
 };
-``;
+
